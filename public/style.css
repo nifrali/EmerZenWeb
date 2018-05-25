@@ -96,6 +96,8 @@ body {
     /*border: 10px solid: #222;*/
    /* background-color: yellow;*/
     background-image: url("images/bg-bay.png");
+    background-repeat: no-repeat;
+    background-size: 625px 300px;
 }
 #svgcontainer3 {
     width: 625px;
