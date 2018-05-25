@@ -78,27 +78,29 @@ body {
     margin: 0;
 }
 #svgcontainer1 {
-    width: 625px;
+    width: 625;
     float: left;
-    height: 260px;
+    height: 300px;
     border-style: solid;
     /*border: 10px solid: #000;*/
-    background-color: yellow;
-    /*background-image: url("images/bed2.png");*/
+    /*background-color: yellow;*/
+    background-image: url("images/bg-bay.png");
+    background-repeat: no-repeat;
+    background-size: 625px 300px;
 }
 #svgcontainer2 {
-    width: 625px;
+    width: 625;
     float: left;
-    height: 260px;
+    height: 300px;
     border-style: solid;
     /*border: 10px solid: #222;*/
-    background-color: yellow;
-    /*background-image: url("images/bed2.png");*/
+   /* background-color: yellow;*/
+    background-image: url("images/bg-bay.png");
 }
 #svgcontainer3 {
     width: 625px;
     float: left;
-    height: 260px;
+    height: 300px;
     border-style: solid;
     /*border: 10px solid: #222;*/
     background-color: yellow;
@@ -107,7 +109,7 @@ body {
 #svgcontainer4 {
     width: 625px;
     float: left;
-    height: 260px;
+    height: 300px;
     border-style: solid;
     /*border: 10 px solid: #200;*/
     background-color: gray;
