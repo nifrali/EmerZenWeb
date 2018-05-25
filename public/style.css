@@ -1,0 +1,132 @@
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #0080CC;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #C1BCF9;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+body {
+   background-image: url("images/bg.jpg");
+   background-color: #605e7c;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.node {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.link {
+    stroke: #777;
+    stroke-width: 2px;
+}
+
+.link.red {
+    stroke: #FF0000;
+}
+
+.box {
+    position: fixed;
+}
+
+#container {
+    width: 100%; 
+    float:left; 
+    margin: 0;
+}
+#svgcontainer1 {
+    width: 625px;
+    float: left;
+    height: 260px;
+    border-style: solid;
+    /*border: 10px solid: #000;*/
+    background-color: yellow;
+    /*background-image: url("images/bed2.png");*/
+}
+#svgcontainer2 {
+    width: 625px;
+    float: left;
+    height: 260px;
+    border-style: solid;
+    /*border: 10px solid: #222;*/
+    background-color: yellow;
+    /*background-image: url("images/bed2.png");*/
+}
+#svgcontainer3 {
+    width: 625px;
+    float: left;
+    height: 260px;
+    border-style: solid;
+    /*border: 10px solid: #222;*/
+    background-color: yellow;
+
+}
+#svgcontainer4 {
+    width: 625px;
+    float: left;
+    height: 260px;
+    border-style: solid;
+    /*border: 10 px solid: #200;*/
+    background-color: gray;
+    /*background-image: url("images/bed2.png");*/
+}
+#clear {
+    clear: both;
+}
+button {
+    position: absolute;
+    width: 30px;
+}
+button#slow {
+    margin-top: 28px;
+}
+button#play {
+    margin-top: 54px;
+}
+button#reset {
+    margin-top: 80px;
+}
+
