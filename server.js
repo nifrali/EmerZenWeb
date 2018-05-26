@@ -66,17 +66,12 @@ function sendTest(){
    "MAC3": "C80F10325F00"
   }
 
-  if ( counter % 2  == 0 ){
-    console.log('Sending to client' + JSON.stringify(testdata1))
-    wss.broadcast(JSON.stringify(testdata3));
+  var test_data = [testdata1,testdata2,testdata3,testdata4]
+  
+  test_data.forEach(function(data){
+    console.log('Sending to client' + JSON.stringify(data))
+    wss.broadcast(JSON.stringify(data));
   }
-  else{
-    console.log('Sending to client' + JSON.stringify(testdata2))
-    wss.broadcast(JSON.stringify(testdata2));
-  }
-
-  wss.broadcast(JSON.stringify(testdata4));
-  wss.broadcast(JSON.stringify(testdata3));
 
   counter = counter + 1
 }
@@ -97,7 +92,7 @@ iotHubReader.startReadMessage(function (obj, date) {
   }
 });*/
 
-setInterval(sendTest, 5000);
+setInterval(sendTest, 3000);
 
 var port = normalizePort(process.env.PORT || '3000');
 server.listen(port, function listening() {
